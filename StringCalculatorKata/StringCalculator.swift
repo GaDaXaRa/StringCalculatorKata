@@ -15,7 +15,7 @@ class StringCalculator: NSObject {
         for numberString in expression.componentsSeparatedByString(",") {
             let value = Int(numberString)
             if (value != nil) {
-                badge = badge + Int(numberString)!
+                badge += value!
             }
         }
         
