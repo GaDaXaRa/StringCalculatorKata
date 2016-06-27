@@ -37,4 +37,8 @@ class StringCalculatorKataTests: XCTestCase {
     func testInputIndeterminatedNumbersReturnSum() {
         XCTAssertEqual(10, sut.add("2,1,3,4"))
     }
+    
+//    func testHandleNewLines() {
+//        XCTAssertEqual(6, sut.add("1,2\\n3"))
+//    }
 }

@@ -10,14 +10,13 @@ import UIKit
 
 class StringCalculator: NSObject {
     
-    func add(numberString: String) -> Int {
-        if (numberString.characters.count == 0) {
-            return 0
-        }
-        
+    func add(expression: String) -> Int {
         var badge = 0
-        for number in numberString.componentsSeparatedByString(",") {
-            badge = badge + Int(number)!
+        for numberString in expression.componentsSeparatedByString(",") {
+            let value = Int(numberString)
+            if (value != nil) {
+                badge = badge + Int(numberString)!
+            }
         }
         
         return badge
