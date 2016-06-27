@@ -13,10 +13,13 @@ class StringCalculator: NSObject {
     func add(expression: String) -> Int {
         var badge = 0
         for numberString in expression.componentsSeparatedByString(",") {
-            let value = Int(numberString)
-            if (value != nil) {
-                badge += value!
+            for numberString2 in numberString.componentsSeparatedByString("\\n") {
+                let value = Int(numberString2)
+                if (value != nil) {
+                    badge += value!
+                }
             }
+            
         }
         
         return badge

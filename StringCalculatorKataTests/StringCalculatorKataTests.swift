@@ -35,10 +35,11 @@ class StringCalculatorKataTests: XCTestCase {
     }
     
     func testInputIndeterminatedNumbersReturnSum() {
-        XCTAssertEqual(10, sut.add("2,1,3,4"))
+        XCTAssertEqual(100, sut.add("20,10,30,40"))
     }
     
-//    func testHandleNewLines() {
-//        XCTAssertEqual(6, sut.add("1,2\\n3"))
-//    }
+    func testHandleNewLines() {
+        XCTAssertEqual(6, sut.add("1,2\\n3"))
+        XCTAssertEqual(6, sut.add("1\\n2,3"))
+    }
 }
