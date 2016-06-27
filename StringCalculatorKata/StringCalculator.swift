@@ -12,8 +12,12 @@ class StringCalculator: NSObject {
     
     func add(numberString: String) -> Int {
         if (numberString.characters.count == 1) {
-            return Int(numberString)!;
+            return Int(numberString)!
+        } else if (numberString.characters.count == 3) {
+            let components = numberString.componentsSeparatedByString(",")
+            return Int(components[0])! + Int(components[1])!
         }
+        
         return 0
     }
 }
