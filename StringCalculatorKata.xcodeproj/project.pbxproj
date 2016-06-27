@@ -10,6 +10,7 @@
 		3F3909891D21837400FAB8B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3909881D21837400FAB8B5 /* AppDelegate.swift */; };
 		3F3909901D21837400FAB8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F39098F1D21837400FAB8B5 /* Assets.xcassets */; };
 		3F39099E1D21837400FAB8B5 /* StringCalculatorKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39099D1D21837400FAB8B5 /* StringCalculatorKataTests.swift */; };
+		3F3909A91D21853E00FAB8B5 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3909A81D21853E00FAB8B5 /* StringCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		3F3909991D21837400FAB8B5 /* StringCalculatorKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F39099D1D21837400FAB8B5 /* StringCalculatorKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculatorKataTests.swift; sourceTree = "<group>"; };
 		3F39099F1D21837400FAB8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3909A81D21853E00FAB8B5 /* StringCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				3F3909881D21837400FAB8B5 /* AppDelegate.swift */,
 				3F39098F1D21837400FAB8B5 /* Assets.xcassets */,
 				3F3909941D21837400FAB8B5 /* Info.plist */,
+				3F3909A81D21853E00FAB8B5 /* StringCalculator.swift */,
 			);
 			path = StringCalculatorKata;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3909A91D21853E00FAB8B5 /* StringCalculator.swift in Sources */,
 				3F3909891D21837400FAB8B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
