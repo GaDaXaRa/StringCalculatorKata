@@ -11,13 +11,15 @@ import UIKit
 class StringCalculator: NSObject {
     
     func add(numberString: String) -> Int {
-        if (numberString.characters.count == 1) {
-            return Int(numberString)!
-        } else if (numberString.characters.count == 3) {
-            let components = numberString.componentsSeparatedByString(",")
-            return Int(components[0])! + Int(components[1])!
+        if (numberString.characters.count == 0) {
+            return 0
         }
         
-        return 0
+        var badge = 0
+        for number in numberString.componentsSeparatedByString(",") {
+            badge = badge + Int(number)!
+        }
+        
+        return badge
     }
 }

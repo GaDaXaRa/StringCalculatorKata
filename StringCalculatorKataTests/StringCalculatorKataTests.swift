@@ -33,4 +33,8 @@ class StringCalculatorKataTests: XCTestCase {
     func testTwonNumberReturnsSum() {
         XCTAssertEqual(3, sut.add("2,1"))
     }
+    
+    func testInputIndeterminatedNumbersReturnSum() {
+        XCTAssertEqual(10, sut.add("2,1,3,4"))
+    }
 }
